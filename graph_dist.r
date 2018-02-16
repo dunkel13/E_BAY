@@ -1,3 +1,7 @@
 curve(dbeta(x,1,1), from=0, to=1, ylim=c(0,4))
 curve(dbeta(x,3,9), col = "red", add=TRUE)
 par(mfrow = c(1,1))
+curve(dbeta(x,50,50), from=0, to=1, col="#000000", main="dist beta", ylim=c(0,10))
+curve(dbeta(x,100,50), from=0, to=1, col="purple", add=TRUE )
+mtext("dist apriori beta(50,50) ", adj = 0)
+mtext("dist posteriori beta(100,50)", col = "purple", adj = 1)
